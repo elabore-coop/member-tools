@@ -9,6 +9,8 @@ class MembershipInvoice(models.TransientModel):
         domain=[("payment_type", "=", 'inbound')],
         )
 
+    date_invoice = fields.Date(string='Invoice Date')
+
     def membership_invoice(self):
         res = super(MembershipInvoice, self).membership_invoice()
         invoice_ids = None
@@ -18,5 +20,6 @@ class MembershipInvoice(models.TransientModel):
                 if invoice_ids:
                     self.env['account.invoice'].browse(invoice_ids).write({
                     'payment_mode_id':self.payment_mode_id.id,
+                    'date_invoice':self.date_invoice,
                     })
         return res

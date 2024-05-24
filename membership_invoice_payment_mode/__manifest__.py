@@ -3,13 +3,13 @@
 
 {
     "name": "membersip_invoice_payment_mode",
-    "version": "12.0.1.0.0",
+    "version": "12.0.2.0.0",
     "author": "Élabore",
     "maintainer": "False",
     "website": "elabore.coop",
     "license": "",
     "category": "",
-    "summary": "Add payment mode in merbership invoice wizard",
+    "summary": "Add payment mode and invoice date in merbership invoice wizard",
     # any module necessary for this one to work correctly
     "depends": [
         "account_payment_mode",
