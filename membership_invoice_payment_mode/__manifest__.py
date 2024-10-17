@@ -3,7 +3,7 @@
 
 {
     "name": "membersip_invoice_payment_mode",
-    "version": "12.0.2.0.0",
+    "version": "16.0.1.0.0",
     "author": "Élabore",
     "maintainer": "False",
     "website": "elabore.coop",
